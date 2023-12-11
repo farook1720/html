@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form id="register" method="post" enctype="mltipart/from-data">
+
+    <table border="2">
+      <caption>Regstration form</caption>
+
+      <tr>
+
+
+        <td>First Name</td>
+        <td><input type="text" name="fname" requried ato focus></td>
+
+      </tr>
+
+      <tr>
+
+        <td>Last Name</td>
+        <td><input type="text" name="lname" placeholder="last name"> </td>
+
+      </tr>
+      <tr>
+
+        <td>Date Of Birth</td>
+        <td><input type="date" name="dob"></td>
+
+      </tr>
+      <td>Gender</td>
+      <td>
+
+        <select name="Gender" id="">
+
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </td>
+
+
+      <tr>
+        <td>Password</td>
+
+        <td><input type="password" name="pwd" </td>
+      </tr>
+
+      <tr>
+
+        <td>Photo</td>
+        <td><input type="file" name="adhaar"> </td>
+
+      </tr>
+      <td></td>
+      <td><input type="submit"> </td>
+
+
+
+
+    </table>
+
+  </form>
+
+
+  <hr>
+
+  <form action="" method="get">
+<fieldset>
+<legend>Personal Details</legend>
+<label for="">Name</label>
+<input type="text" name="fname" value="Ramesh NDK">
+<br>
+<input type="text" name="lname" placeholder="Enter Your Name...">
+
+<br>
+
+Readonly <input type="text" name="animal" value="cat" readonly>
+  
+</fieldset>
+<br>
+
+<fieldset>
+
+  <legend>Edcational Details</legend>
+  Disabled<input type="text" name="food" value="rice" disabled>
+  <br>
+
+  width: <input type="text" size="25" >
+  <br>
+  chars: <input type="text" maaxlength="10" minlength="5">
+  <br>
+  <input type="number" max="120" min="12" step="12">
+  <input type="number" max="10" min="0" step="0.01">
+  <br>
+  <input type="Submit" value="Login">
+</fieldset>
+
+
+
+  </form>
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore repellat accusamus quae nisi vero natus. Vel magni mollitia, corporis est, id porro officiis nisi laborum unde nesciunt vero molestias harum.</p>
+
+  <input type="text" name="city" form="register">
+  <style>
+
+    legend {
+
+      background-color: skyblue;
+    }
+  </style>
+
+</body>
+
+</html>
