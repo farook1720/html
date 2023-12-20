@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Good Morning</h1>
+  <button onclick="run()">Click to run</button>
+  <script>
+
+    function run() {
+      alert('Good Morning')
+
+    }
+
+    function showmsg(x) {
+
+      console.log(x);
+
+    }
+  </script>
+
+
+  <h2>MSG</h2>
+  <BUTTON onclick="showmsg('hello')">Show msg1</BUTTON>
+  <BUTTON onclick="showmsg('hai')">Show msg1</BUTTON>
+
+  <h2>Return</h2>
+  <script>
+
+    function addition(x, y) {
+      return (x + y)(x / y)(x * y);
+
+
+
+    }
+
+    sum = addition(5, 10)
+    console.log('sum', sum);
+
+  </script>
+
+
+  <hr>
+
+
+  <h3>Dialog</h3>
+
+  <BUTTON onclick="run1()">Show Dialog</BUTTON>
+  <BUTTON onclick="run2()">Show Modal</BUTTON>
+
+  <dialog id="box">
+    hai hello
+    <button onclick="close1()"> x </button>
+
+
+
+  </dialog>
+
+  <script>
+    box = document.getElementById('box')
+    function run1() {
+      box.show()
+
+    }
+
+    function run2() {
+      box.showModal()
+    }
+
+    function colse1() {
+      box.close
+
+    }
+  </script>
+
+
+  <h2>Addition</h2>
+
+  <input type="number" id="a" value="5">
+  <input type="number" id="b" value="10">
+
+
+  <button onclick="addthis()">ADD</button>
+  <h2 id="sum">-</h2>
+  <h2 id="diff">-</h2>
+  <h2 id="slash">-</h2>
+  <h2 id="Multi">-</h2>
+
+  <script>
+
+    function addthis(params) {
+      a = document.getElementById('a')
+      b = document.getElementById('b')
+
+      sum = Number(a.value) + Number(b.value)
+      diff = Number(a.value) - Number(b.value)
+      slash = Number(a.value) / Number(b.value)
+      Multi = Number(a.value) * Number(b.value)
+      document.getElementById('sum').innerHTML = sum
+      document.getElementById('diff').innerHTML = diff
+      document.getElementById('slash').innerHTML = slash
+      document.getElementById('Multi').innerHTML = Multi
+
+
+    }
+  </script>
+
+
+</body>
+
+</html>
